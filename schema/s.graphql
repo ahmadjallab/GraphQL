@@ -1,0 +1,25 @@
+type user {
+    id: ID!
+    name: String!
+    email: String!
+    password: String!
+    created_at: String!
+    updated_at: String!
+}
+type Query {
+    users: [user!]!
+    user(id: ID!): user!
+}
+
+export type user {
+    id: ID!
+    name: String!
+    email: String!
+    password: String!
+    created_at: String!
+    updated_at: String!
+}
+export type Query {
+    users: [user!]!
+    user(id: ID!): user!
+}
